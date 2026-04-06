@@ -21,8 +21,8 @@ def filtrar_datos(datos, id_participante):
    filtrados = []
     
    for dato in datos: 
-       ID = dato["id"]
-       if ID == id_participante: 
+       id_d = dato["id"]
+       if id_d == id_participante: 
             filtrados.append(dato)
         
    dicc_filtrados = {"id_participante": id_participante, "datos": filtrados}
