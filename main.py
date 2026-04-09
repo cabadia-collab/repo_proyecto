@@ -5,7 +5,7 @@ from src.carga_datos import cargar_datos
 from src.validacion_datos import validar_registro
 from src.metricas import calcular_metricas
 
-datos= cargar_datos("datos/datos_proyecto.csv")
+datos= cargar_datos("datos/PulseLab_mock_data.csv")
 
 datos_validos= []
 
