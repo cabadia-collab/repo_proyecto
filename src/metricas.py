@@ -15,19 +15,19 @@ def calcular_promedio_senal(datos_validos):
     float: numero que representa el promedio de la señal de todos los participantes, o 0 si no hay datos válidos.
 
    """
-  suma=0
-  cantidad=0
+   suma=0
+   cantidad=0
 
-  for participante in datos_validos:
-    for senal in participante["valor"]:
-      suma+=senal
-      cantidad+=1
+   for participante in datos_validos:
+     for senal in participante["valor"]:
+       suma+=senal
+       cantidad+=1
   
-  if cantidad==0:
-    return 0
+   if cantidad==0:
+     return 0
   
-  promedio=suma/cantidad
-  return promedio
+   promedio=suma/cantidad
+   return promedio
 
 #funcion maximo
 def calcular_maximo_senal(datos_validos):
@@ -44,13 +44,13 @@ def calcular_maximo_senal(datos_validos):
     float: numero que representa el maximo de la señal de todos los participantes.
 
    """
-  maximo= None
+   maximo= None
 
-   for participante in datos_validos:
-    for valor in participante["valor"]:
-      if maximo is None or valor>maximo:
-        maximo=valor
-  return maximo
+    for participante in datos_validos:
+     for valor in participante["valor"]:
+       if maximo is None or valor>maximo:
+         maximo=valor
+   return maximo
 
 #funcion minimo
 def calcular_minimo_senal(datos_validos):
@@ -68,13 +68,13 @@ def calcular_minimo_senal(datos_validos):
     float: numero que representa el minimo de la señal de todos los participantes.
 
    """
-  minimo= None
+   minimo= None
 
-   for participante in datos_validos:
-    for valor in participante["valor"]:
-      if minimo is None or valor<minimo:
-        minimo=valor
-  return minimo
+    for participante in datos_validos:
+     for valor in participante["valor"]:
+       if minimo is None or valor<minimo:
+         minimo=valor
+   return minimo
 
 def calcular_metricas(promedio,maximo,minimo):
   """
