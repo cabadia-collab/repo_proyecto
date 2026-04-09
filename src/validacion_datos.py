@@ -24,7 +24,7 @@ def validar_numero(num):
         return False
         
 def validar_datos(registro):
-     '''
+    '''
     función que valida el tipo de dato y los valores de un diccionario
 
     Parameters
