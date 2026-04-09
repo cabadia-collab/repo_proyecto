@@ -56,16 +56,16 @@ def calcular_maximo_senal(datos_validos):
 def calcular_minimo_senal(datos_validos):
 
    """
-    Calcular el minimo de los valores de la señal entre todos los participantes. 
+   Calcular el minimo de los valores de la señal entre todos los participantes. 
 
-    Parameters
-    ----------
-    datos_validos : list
+   Parameters
+   ----------
+   datos_validos : list
         Lista de datos de participantes (cada participante es un diccionario)
    
-    Returns
-    -------
-    float: numero que representa el minimo de la señal de todos los participantes.
+   Returns
+   -------
+   float: numero que representa el minimo de la señal de todos los participantes.
 
    """
    minimo= None
@@ -77,22 +77,22 @@ def calcular_minimo_senal(datos_validos):
    return minimo
 
 def calcular_metricas(promedio,maximo,minimo):
-  """
-    Calcular las metricas de la señal.
-    Parameters
-    ----------
-    promedio : float
+   """
+   Calcular las metricas de la señal.
+   Parameters
+   ----------
+   promedio : float
         numero que representa el promedio de la señal de todos los participantes.
 
-    maximo : float
+   maximo : float
         numero que representa el maximo de la señal de todos los participantes.
 
-    minimo : float
+   minimo : float
         numero que representa el minimo de la señal de todos los participantes.
 
-    Returns
-    -------
-    diccionario: diccionario con las metricas de la señal.
+   Returns
+   -------
+   diccionario: diccionario con las metricas de la señal.
 
    """
    diccionario={}
