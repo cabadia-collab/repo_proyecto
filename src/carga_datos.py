@@ -46,7 +46,7 @@ def cargar_datos(ruta_archivo):
 
             id_participante = partes[0]
             tiempo = partes[1]
-            valor = partes[2]
+            valor = float(partes[2])
             fase = partes[3]
             condicion_experimental = partes[4]
             hit = partes[5]
