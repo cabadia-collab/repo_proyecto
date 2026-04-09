@@ -44,7 +44,7 @@ def calcular_maximo_senal(datos_validos):
     float: numero que representa el maximo de la señal de todos los participantes.
 
    """
-   maximo= None
+   maximo = None
 
    for participante in datos_validos:
      for valor in participante["valor"]:
