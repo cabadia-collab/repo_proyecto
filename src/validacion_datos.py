@@ -78,7 +78,7 @@ def validar_datos(registro):
 ### Programa Principal
 validacion = True
 for registro in datos:
-    if not validar_datos(registro)
+    if not validar_datos(registro):
         validacion = False
         print("Hay un problema en alguno de los diccionarios")
         break
