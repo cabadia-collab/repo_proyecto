@@ -75,37 +75,3 @@ def calcular_minimo_senal(datos_validos):
        if minimo is None or valor<minimo:
          minimo=valor
    return minimo
-
-def calcular_metricas(promedio,maximo,minimo):
-   """
-   Calcular las metricas de la señal.
-   Parameters
-   ----------
-   promedio : float
-        numero que representa el promedio de la señal de todos los participantes.
-
-   maximo : float
-        numero que representa el maximo de la señal de todos los participantes.
-
-   minimo : float
-        numero que representa el minimo de la señal de todos los participantes.
-
-   Returns
-   -------
-   diccionario: diccionario con las metricas de la señal.
-
-   """
-   diccionario={}
-   diccionario["promedio"]=promedio
-   diccionario["maximo"]=maximo
-   diccionario["minimo"]=minimo
-   return diccionario
-
-#Programa Principal 
-promedio=calcular_promedio_senal(datos_validos)
-
-maximo=calcular_maximo_senal(datos_validos)
-
-minimo=calcular_minimo_senal(datos_validos)
-
-metricas= calcular_metricas(promedio,maximo,minimo)
