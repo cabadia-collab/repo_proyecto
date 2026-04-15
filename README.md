@@ -15,4 +15,4 @@ Manejo de errores:
 - validacion_datos: Se encarga de validar que los registros sean los correctos, y lo hace identificando si los tipos de datos son los apropiados. Percibe algunos de tipo ValueError y TypeError.
 - detectar_picos: se encarga de revisar que los valores de los datos sean los adecuados para llevar a cabo la función. Percibe algunos de tipo ValueError.
 - metricas: se encarga de revisar que loos valores sean los adecuados para calcular promedio, mínimo, máximo. Percibe algunos de tipo ValueError.
-
+- procesamiento: verificar que el id ingresado sea valido y agregar la informacion a la lista si hay tal. 
