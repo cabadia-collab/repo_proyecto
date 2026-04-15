@@ -15,17 +15,23 @@ def calcular_promedio_senal(datos_validos):
     float: numero que representa el promedio de la señal de todos los participantes, o 0 si no hay datos válidos.
 
    """
+   if len(datos_validos) == 0:
+        raise ValueError("No hay datos para calcular el promedio") 
+
    suma=0
    cantidad=0
 
    for participante in datos_validos:
+    if "valor" not in participante:
+            raise ValueError("Falta la clave 'valor' en los datos")
+
      for senal in participante["valor"]:
        suma+=senal
        cantidad+=1
        
   
-   if cantidad==0:
-     return 0
+   if cantidad == 0:
+        raise ValueError("No hay valores de señal")
   
    promedio=suma/cantidad
    return promedio
@@ -45,6 +51,9 @@ def calcular_maximo_senal(datos_validos):
    float: numero que representa el maximo de la señal de todos los participantes.
 
    """
+   if len(datos_validos) == 0:
+        raise ValueError("No hay datos para calcular el máximo")
+
    maximo = None
 
    for participante in datos_validos:
@@ -69,6 +78,9 @@ def calcular_minimo_senal(datos_validos):
    float: numero que representa el minimo de la señal de todos los participantes.
 
    """
+   if len(datos_validos) == 0:
+        raise ValueError("No hay datos para calcular el minimo")
+
    minimo= None
 
    for participante in datos_validos:
@@ -77,3 +89,6 @@ def calcular_minimo_senal(datos_validos):
        if minimo is None or valor_int<minimo:
          minimo=valor
    return minimo
+
+
+   
